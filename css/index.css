@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css?family=Prompt|Saira+Stencil+One&display=swap');
+
+:root {
+    --main-color: black;
+    font-family: 'Prompt', sans-serif;
+}
+
+body {
+    max-width: 980px;
+    margin:auto;
+}
+
+
+header .logo {
+    font-family: 'Saira Stencil One', cursive;
+    font-size: 2rem;
+    text-align: center;
+    margin: 0;
+}
+
+header .menu {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    padding: 0;
+}
+
+header .menu a {
+    color: var(--main-color);
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    padding: 5px;
+
+}
+
+header .menu a:hover {
+    border: 1px solid black;
+}
+
+@media (min-width: 550px) {
+   header nav {
+       display: flex;
+   }
+
+   header .menu {
+       flex:1;
+   }
+}
+
+header .banner {
+    min-height: 500px;
+    background-image: url(../image/auto.jpg);
+    background-size: cover;
+    background-position: center;
+        display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+header .banner h1 {
+    color:black;
+    font-size: 3rem;
+    font-family: 'Prompt', sans-serif;
+}
+ .button {
+  background-color:transparent;
+  border: 1px solid white;
+  color:white;
+  padding: 10px 22px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 10px;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition: 0.2s;
+}
